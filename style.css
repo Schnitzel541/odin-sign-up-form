@@ -36,6 +36,7 @@ h3 {
     margin: 0;
 }
 
+
 .container-main {
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -47,6 +48,13 @@ h3 {
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.image-text > .odin-logo {
+    position: absolute;
+    width: 5%;
+    top: 20%;
+    left: 14%;
 }
 
 .image-text > img {

@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin | Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    <div class="left-content">
-        <h3>Logo</p>
+    <div class="image-text">
+        <img src="image.jpg">
     </div>
-    <div class="right-content">
-        <header class="header">
-            <p class="intro">This is not a real online service! You know you need something lik this in your life to help you realise your deepest dreams. Sign up now to get started.</p>
-            <p class="intro">You know you want to</p>
-        </header>
-        <div class="call-to-action"><p>Let's do this</p></div>
+    <div class="container-main">
+    <header>
+        <p>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+    </header>
+    <h3>Let's do this!</h3>
+    <div class="form-container">
         <form action="#" method="post">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name">
-            <label for="email">Email</label>
+        <div class="left-form">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="email">EMAIL</label>
             <input type="email" name="email" id="email">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name">
-            <label for="number">Phone number</label>
-            <input type="number" name="number" id="number">
-            <label for="confirm-password">Confirm password</label>
-            <input type="password" id="confirm-password" name="confirm-password">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="right-form">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="number">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+        </div>
         </form>
-        <button type="submit">Create Account</button>
-        <p class="bottom-ptag">Already have an account? <a href="#">Log in</a></p>
+    </div>
+    <div class="bottom-content">
+        <button>Create Account</button>
+        <p>Already have an account? <a href="#">Log in.</a></p>
     </div>
 </div>
 </body>

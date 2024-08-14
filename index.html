@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin | Sign Up Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="image-text">
-        <img class="odin-logo" src="odin.png" alt="odin-logo">
-        <img src="image.jpg">
+      <div class="logo">
+        <img src="odin.png" alt="Odin Logo">
+        <h1>Odin</h1>
+      </div>
+      <img src="image.jpg" alt="Background Photo"/>
+      <div class="background"></div>
     </div>
     <div class="container-main">
-    <header>
+      <header>
         <p>
-            This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
         </p>
         <p>You <em>know</em> you want to.</p>
-    </header>
-    <h3>Let's do this!</h3>
-    <div class="form-container">
-        <form action="#" method="post">
-        <div class="left-form">
+      </header>
+      <h3>Let's do this!</h3>
+      <div class="form-container">
+        <form id="login-form" action="#" method="post">
+          <div class="left-form">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" required/>
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required/>
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div class="right-form">
+            <input type="password" name="password" id="password" required minlength="3" maxlength="30"/>
+          </div>
+          <div class="right-form">
             <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" name="last-name" id="last-name" required/>
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="text">
+            <input type="text" required/>
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
-        </div>
+            <input type="password" name="confirm-password" id="confirm-password" required minlength="3" maxlength="30"/>
+          </div>
         </form>
-    </div>
-    <div class="bottom-content">
-        <button>Create Account</button>
+      </div>
+      <div class="bottom-content">
+        <button form="login-form" type="submit">Create Account</button>
         <p>Already have an account? <a href="#">Log in.</a></p>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

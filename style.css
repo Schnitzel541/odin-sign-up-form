@@ -150,8 +150,12 @@ input:hover {
     outline: none;
 }
 
-input:invalid:focus {
+#password:invalid:focus {
     border: 1px solid red;
+}
+
+#confirm-password:invalid:focus  {
+    border: 1px solid red; 
 }
 
 .left-form, .right-form {

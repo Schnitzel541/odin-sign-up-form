@@ -133,10 +133,25 @@ label {
 }
 
 input {
-    border: 1px solid black;
+    border: 1px solid #596D48;
     height: 25px;
     width: 250px;
     border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: 0px 1px 5px rgb(156, 156, 156);
+    border: 1px solid rgb(91, 191, 253);
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0px 1px 5px rgb(156, 156, 156);
+    outline: none;
+}
+
+input:invalid:focus {
+    border: 1px solid red;
 }
 
 .left-form, .right-form {

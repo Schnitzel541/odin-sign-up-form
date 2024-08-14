@@ -39,7 +39,7 @@
             <label for="last-name">LAST NAME</label>
             <input type="text" name="last-name" id="last-name" required/>
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="text" required/>
+            <input name="phone-number" type="text" id="phone-number" required minlength="8" maxlength="10" placeholder="(X)XXXXXXXXX" pattern="^[0-9]*$"/>
             <label for="confirm-password">CONFIRM PASSWORD</label>
             <input type="password" name="confirm-password" id="confirm-password" required minlength="3" maxlength="30"/>
           </div>
